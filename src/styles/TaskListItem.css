@@ -1,0 +1,47 @@
+.task-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid rgb(181, 181, 189);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.task-item button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #bccfab;
+}
+
+.task-item h3 {
+  margin-bottom: 5px;
+}
+
+.task-item p {
+  margin: 0;
+}
+
+/* Add margin between delete and edit buttons */
+.task-item button + button {
+  margin-left: 5px; /* Adjust the amount of space between the buttons */
+}
+
+@media only screen and (max-width: 768px) {
+  .task-item {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+.task-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto; /* Adjusted margin for mobile responsiveness */
+  }
+  
+  .head {
+    margin: 15px 0; /* Adjusted margin for mobile responsiveness */
+  }
+  
+  .filter-buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+  }
+  
+  .filter-buttons button {
+    border: 1px solid blue;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: rgb(119, 164, 15);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .task-item {
+      width: 90%; /* Full width for mobile devices */
+    
+        
+    }
+  }
+  
